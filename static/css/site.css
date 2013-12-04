@@ -28,23 +28,33 @@ a {
 }
 
 @media (max-width: 768px) {
+	.post-meta-data p {
+		display: inline;
+		padding-right: 1em;
+
+	}
+}
+
+article {
+	margin-bottom: 3em;
+}
 
 	.post-meta-data { 
 		border-left: none;
 		padding: 0;
 	}
 
-	.post-meta-data p {
-		display: inline;
-		padding: 0 1em;
+
+
+
+	.post-meta-data {
 		border-left: solid 5px #f6f6f6;
+		padding: 2em;
 	}
-}
+
 
 .post-meta-data {
-	border-left: solid 5px #f6f6f6;
-
-	padding: 2em;
+	margin: 0 0 1em 2em;
 }
 
 .post-meta-data p {
@@ -65,9 +75,29 @@ nav ul, nav ul li {
 
 footer {
 	background-color: #222;
-	color: #fff;
-	margin-top: 4em;
-	padding-bottom: 6em;
-	text-align: right;
+	color: #bbb;
+	padding-bottom: 2em;
+}
 
+footer h4 {
+	color: #fff;
+}
+
+footer a {
+	color: #bbb;
+	text-decoration: none;
+	border-bottom: dotted 1px #bbb;
+}
+
+.footer-meta {
+	margin-top: 2em;
+	text-align: center;
+}
+
+
+ul.blogroll li {
+	float: left;
+	width: 12em;
+	margin-right: 2em;
+	
 }
