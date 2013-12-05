@@ -7,8 +7,10 @@
     <meta name="description" content="Your site description." />
     <title>Responsive Template</title>
 
-    <link href="static/css/site.css" rel="stylesheet" />
     <link href="static/css/responsive.min.css" rel="stylesheet" />
+
+    <link href="static/css/site.css" rel="stylesheet" />
+    
     <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9 &!(IEMobile)]>
@@ -63,6 +65,20 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis eu nisl sit amet ornare. Donec at ipsum condimentum, lacinia orci in, pharetra nulla. Maecenas eros metus, accumsan tempor augue non, blandit ultricies diam. Mauris aliquet, sapien nec vehicula accumsan, dui justo lobortis augue, in hendrerit mi ante at ante. In pharetra sagittis consectetur. Nulla tincidunt vitae magna sit amet faucibus. Nunc faucibus ligula risus, id rhoncus nunc fringilla ut. Maecenas lobortis lobortis imperdiet.
                 </p>
 
+                <pre><span class="n">public</span> <span class="n">interface</span> <span class="n">ITree</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">app</span> <span class="p">{</span> <span class="n">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">id</span> <span class="p">{</span> <span class="n">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">Render</span><span class="p">(</span><span class="n">ref</span> <span class="n">XmlDocument</span> <span class="n">Tree</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">RenderJS</span><span class="p">(</span><span class="n">ref</span> <span class="n">StringBuilder</span> <span class="n">Javascript</span><span class="p">);</span>
+<span class="p">}</span>
+</pre>
+
+
+                <p>
+                    Vehicula accumsan, dui justo lobortis augue, in hendrerit mi ante at ante. In pharetra sagittis consectetur. Nulla tincidunt vitae magna sit amet faucibus. Nunc faucibus ligula risus, id rhoncus nunc fringilla ut. Maecenas lobortis lobortis imperdiet.
+                </p>
+
                 <h2>Sub Heading</h2>
 
                 <p>
@@ -81,20 +97,31 @@
 
     </article>
 
-    <article>
+    <div class="row">
+
+        <div class="col-s-12">
+
+            <h2>Older Articles</h2>
+
+        </div>
+
+    </div>
+
+    <article class="archive">
 
         <div class="row">
 
             <div class="col-s-12">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis eu nisl sit amet ornare.</h1>
+                <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h2>
             </div>
 
         </div>
         <div class="row">
 
+            
             <div class="col-s-12">
 
-                <div class="col-s-4 push-right post-meta-data">
+                <div class="col-s-3 push-left archive-meta-data">
                     <p>Wed 17 July 2013</p>
                     <p>By <a href="#">Andrew Aitken</a></p>
                     <p>In <a href="#">Category</a></p>
@@ -102,15 +129,11 @@
                 </div>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis eu nisl sit amet ornare. Donec at ipsum condimentum, lacinia orci in, pharetra nulla. Maecenas eros metus, accumsan tempor augue non, blandit ultricies diam. Mauris aliquet, sapien nec vehicula accumsan, dui justo lobortis augue, in hendrerit mi ante at ante. In pharetra sagittis consectetur. Nulla tincidunt vitae magna sit amet faucibus. Nunc faucibus ligula risus, id rhoncus nunc fringilla ut. Maecenas lobortis lobortis imperdiet.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis eu nisl sit amet ornare. Donec at ipsum condimentum, lacinia orci in, pharetra nulla. Maecenas eros metus, accumsan tempor augue non, blandit ultricies diam. Mauris aliquet, sapien nec vehicula accumsan, dui justo lobortis augue.
                 </p>
 
-                <p>
-                    Nunc consequat mi arcu, vel hendrerit neque iaculis at. Proin odio sem, molestie non ultrices ac, rutrum non arcu. Morbi ultricies bibendum suscipit. Nam sed enim sagittis, convallis sem sit amet, blandit arcu. Suspendisse in rutrum dui, eget aliquet dui. Quisque sollicitudin turpis quam, et laoreet felis fringilla sit amet. Mauris nec dictum metus, non interdum nibh. Donec sollicitudin urna risus, quis feugiat risus egestas et. Etiam varius arcu eget ipsum cursus, rutrum feugiat neque gravida. Mauris lacinia imperdiet nisl, sed cursus urna.
-                </p>
-
-                <p>
-                    In hac habitasse platea dictumst. Vestibulum consequat nibh accumsan, faucibus eros vitae, congue metus. Nam ultrices tortor sit amet elit ultrices, eget fringilla massa aliquam. Vestibulum lorem augue, fermentum nec sollicitudin pharetra, convallis quis libero. Quisque eu elit vitae dolor fermentum suscipit eget id mauris. Nunc venenatis, neque vitae facilisis pellentesque, nunc sem tincidunt tortor, id tincidunt ligula sem et ligula. Ut ultricies egestas mollis. Integer aliquam condimentum convallis. Phasellus tincidunt nulla massa, ut convallis massa aliquam at. Proin non placerat orci. Pellentesque mollis in nisl vitae scelerisque. Nullam sit amet purus tristique, auctor turpis quis, tristique mauris. Pellentesque blandit mi ut ante pretium eleifend.
+                <p class="text-right">
+                    <a href="#">Read more</a>
                 </p>
 
             </div>
@@ -118,6 +141,92 @@
         </div>
 
     </article>
+
+    <article class="archive">
+
+        <div class="row">
+
+            <div class="col-s-12">
+                <h2><a href="#">Old post title that is now at the bottom of the page</a></h2>
+            </div>
+
+        </div>
+        <div class="row">
+
+            
+            <div class="col-s-12">
+
+                <div class="col-s-3 push-left archive-meta-data">
+                    <p>Wed 17 July 2013</p>
+                    <p>By <a href="#">Andrew Aitken</a></p>
+                    <p>In <a href="#">Category</a></p>
+                    <p>tags: <a href="#">tag1</a>, <a href="#">tag2</a>, <a href="#">tag3</a></p>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis eu nisl sit amet ornare. Donec at ipsum condimentum, lacinia orci in, pharetra nulla. Maecenas eros metus, accumsan tempor augue non, blandit ultricies diam. Mauris aliquet, sapien nec vehicula accumsan, dui justo lobortis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis eu nisl sit amet ornare. Donec at ipsum condimentum, lacinia orci in, pharetra nulla. Maecenas eros metus, accumsan tempor augue non, blandit ultricies diam. Mauris aliquet, sapien nec vehicula accumsan, dui justo lobortis augue.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis eu nisl sit amet ornare. Donec at ipsum condimentum, lacinia orci in, pharetra nulla. Maecenas eros metus, accumsan tempor augue non, blandit ultricies diam. Mauris aliquet, sapien nec vehicula accumsan, dui justo lobortis augue.
+                </p>
+
+                <p class="text-right">
+                    <a href="#">Read more</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <article class="archive">
+
+        <div class="row">
+
+            <div class="col-s-12">
+                <h2><a href="#">An archived post title</a></h2>
+            </div>
+
+        </div>
+        <div class="row">
+
+            
+            <div class="col-s-12">
+
+                <div class="col-s-3 push-left archive-meta-data">
+                    <p>Wed 17 July 2013</p>
+                    <p>By <a href="#">Andrew Aitken</a></p>
+                    <p>In <a href="#">Category</a></p>
+                    <p>tags: <a href="#">tag1</a>, <a href="#">tag2</a>, <a href="#">tag3</a></p>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis eu nisl sit amet ornare. Donec at ipsum condimentum, lacinia orci in, pharetra nulla. Maecenas eros metus, accumsan tempor augue non, blandit ultricies diam. Mauris aliquet, sapien nec vehicula accumsan, dui justo lobortis augue.
+                </p>
+
+                <p class="text-right">
+                    <a href="#">Read more</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <div class="row">
+
+        <div class="col-s-12">
+
+            <p class="text-center">
+                <a href="#">&#171;</a> Page 2 of 3 <a href="#">&#187;</a>
+            </p>
+
+        </div>
+
+    </div>
 
     </div>
 
@@ -142,9 +251,9 @@
                 <div class="col-s-4">
                     <h4>social</h4>
                     <ul class="social no-bullets">
-                        <li><a href="#">atom feed</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">github</a></li>
+                        <li><a href="#" type="application/atom+xml">atom feed</a></li>
+                        <li><a href="http://www.twitter.com">twitter</a></li>
+                        <li><a href="http://github.com">github</a></li>
                     </ul>
 
                 </div>
@@ -153,7 +262,7 @@
             <div class="row">
                 <div class="col-s-12 footer-meta">
                     <p>
-                        This is the footer &copy; 2013
+                        Powered by <a href="#">pelican</a> and <a href="#">responsive</a> | AndrewAitken.com &copy; 2013
                     </p>
                 </div>
             </div>
@@ -161,8 +270,6 @@
         </div>
 
     </footer>
-
-
 
     <!-- Scripts at the bottom for improved performance. -->
     <!--[if IE 8]>     

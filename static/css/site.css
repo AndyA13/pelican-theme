@@ -10,6 +10,7 @@
 }
 
 body {
+	color: #222;
     font-size: 18px;
     font-family: 'source_sans_proregular', arial;
     line-height: 2em;
@@ -27,38 +28,42 @@ a {
 	color: #900;
 }
 
+h2 a {
+	color: #222;
+}
+
 @media (max-width: 768px) {
 	.post-meta-data p {
 		display: inline;
 		padding-right: 1em;
 
 	}
+
+	.archive-meta-data p {
+		display: inline;
+		padding-left: 1em;
+	}
 }
 
 article {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
-
-	.post-meta-data { 
-		border-left: none;
-		padding: 0;
-	}
-
-
-
-
-	.post-meta-data {
-		border-left: solid 5px #f6f6f6;
-		padding: 2em;
-	}
-
 
 .post-meta-data {
+	border-left: solid 5px #f6f6f6;
 	margin: 0 0 1em 2em;
+	padding: 1em 2em;
 }
 
-.post-meta-data p {
+.post-meta-data p, .archive-meta-data p {
 	margin: 0;
+}
+
+.archive-meta-data {
+	border-right: solid 5px #f6f6f6;
+	margin: 0 2em 1em 0;
+	padding: 1em 2em;
+	text-align: right;
 }
 
 nav ul {
@@ -71,6 +76,10 @@ nav ul li {
 
 nav ul, nav ul li {
 	display: inline;
+}
+
+article.archive {
+
 }
 
 footer {
@@ -90,14 +99,48 @@ footer a {
 }
 
 .footer-meta {
-	margin-top: 2em;
+	font-size: 0.9em;
+	margin-top: 3em;
 	text-align: center;
 }
 
+pre {
+	font-family: courier;
+	font-size: 0.9em;
+	overflow: auto;
+	line-height: 1.4em;
+	white-space: pre;
+}
 
 ul.blogroll li {
 	float: left;
 	width: 12em;
 	margin-right: 2em;
 	
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.social a {
+	background-repeat: no-repeat;
+	padding-left: 1.5em;
+	background-position: left center;
+}
+
+.social a[type$='atom+xml'], .social a[type$='rss+xml'] {
+	background-image: url(../img/rss.png);
+}
+
+.social a[href*='twitter.com'] {
+background-image: url(../img/twitter.png);
+}
+
+.social a[href*='github.com'] {
+background-image: url(../img/github-alt.png);
 }
