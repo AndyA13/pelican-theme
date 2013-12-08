@@ -17,53 +17,11 @@ body {
 }
 
 header {
-	background-image: url(../img/coffee-ring.png);
+	background-image: url(../images/coffee-ring.png);
 	background-repeat: no-repeat;
 	background-position: top right;
-	height: 200px;
+	min-height: 200px;
 	padding-top: 3em;
-}
-
-a {
-	color: #900;
-}
-
-h2 a {
-	color: #222;
-}
-
-@media (max-width: 768px) {
-	.post-meta-data p {
-		display: inline;
-		padding-right: 1em;
-
-	}
-
-	.archive-meta-data p {
-		display: inline;
-		padding-left: 1em;
-	}
-}
-
-article {
-	margin-bottom: 2em;
-}
-
-.post-meta-data {
-	border-left: solid 5px #f6f6f6;
-	margin: 0 0 1em 2em;
-	padding: 1em 2em;
-}
-
-.post-meta-data p, .archive-meta-data p {
-	margin: 0;
-}
-
-.archive-meta-data {
-	border-right: solid 5px #f6f6f6;
-	margin: 0 2em 1em 0;
-	padding: 1em 2em;
-	text-align: right;
 }
 
 nav ul {
@@ -78,9 +36,59 @@ nav ul, nav ul li {
 	display: inline;
 }
 
-article.archive {
-
+a, a:active, a:visited, a:hover {
+	color: #900;
+	text-decoration: underline;
 }
+
+h1 a, h1 a:active, h1 a:visited, h1 a:hover,
+h2 a, h2 a:active, h2 a:visited, h2 a:hover {
+	color: #222;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+/* Posts and archive */
+
+article {
+	margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+	.post div.meta-data p {
+		display: inline;
+		padding-right: 1em;
+
+	}
+
+	.archive div.meta-data p {
+		display: inline;
+		padding-left: 1em;
+	}
+}
+
+.post div.meta-data {
+	border-left: solid 5px #f6f6f6;
+	float: right;
+	margin: 0 0 1em 2em;
+	padding: 1em 2em;
+}
+
+.post div.meta-data p, .archive div.meta-data p {
+	margin: 0;
+}
+
+.archive div.meta-data {
+	border-right: solid 5px #f6f6f6;
+	float: left;
+	margin: 0 2em 1em 0;
+	padding: 1em 2em;
+	text-align: right;
+}
+
+/* Footer */
 
 footer {
 	background-color: #222;
@@ -92,24 +100,10 @@ footer h4 {
 	color: #fff;
 }
 
-footer a {
+footer a, footer a:visited, footer a:active {
 	color: #bbb;
 	text-decoration: none;
 	border-bottom: dotted 1px #bbb;
-}
-
-.footer-meta {
-	font-size: 0.9em;
-	margin-top: 3em;
-	text-align: center;
-}
-
-pre {
-	font-family: courier;
-	font-size: 0.9em;
-	overflow: auto;
-	line-height: 1.4em;
-	white-space: pre;
 }
 
 ul.blogroll li {
@@ -119,11 +113,9 @@ ul.blogroll li {
 	
 }
 
-.text-right {
-	text-align: right;
-}
-
-.text-center {
+.footer-meta {
+	font-size: 0.9em;
+	margin-top: 3em;
 	text-align: center;
 }
 
@@ -134,13 +126,37 @@ ul.blogroll li {
 }
 
 .social a[type$='atom+xml'], .social a[type$='rss+xml'] {
-	background-image: url(../img/rss.png);
+	background-image: url(../images/rss.png);
 }
 
 .social a[href*='twitter.com'] {
-background-image: url(../img/twitter.png);
+	background-image: url(../images/twitter.png);
 }
 
 .social a[href*='github.com'] {
-background-image: url(../img/github-alt.png);
+	background-image: url(../images/github-alt.png);
+}
+
+/* General styles */
+
+pre {
+	font-family: courier;
+	font-size: 0.9em;
+	overflow: auto;
+	line-height: 1.4em;
+	white-space: pre;
+}
+
+p.paginator {
+	text-align: centerb;
+}
+
+/* Text helper */
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
 }
