@@ -104,7 +104,7 @@ footer h4 {
 	color: #fff;
 }
 
-footer a, footer a:visited, footer a:active {
+footer a, footer a:visited, footer a:active, footer a:hover {
 	color: #bbb;
 	text-decoration: none;
 	border-bottom: dotted 1px #bbb;
