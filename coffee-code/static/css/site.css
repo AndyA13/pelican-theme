@@ -60,36 +60,12 @@ article {
 	margin-bottom: 2em;
 }
 
-@media (max-width: 768px) {
-	.post div.meta-data p {
-		display: inline;
-		padding-right: 1em;
-
-	}
-
-	.archive div.meta-data p {
-		display: inline;
-		padding-left: 1em;
-	}
+article.archive h2 {
+	margin-bottom: 0.5em;
 }
 
-.post div.meta-data {
-	border-left: solid 5px #f6f6f6;
-	float: right;
-	margin: 0 0 1em 2em;
-	padding: 1em 2em;
-}
-
-.post div.meta-data p, .archive div.meta-data p {
-	margin: 0;
-}
-
-.archive div.meta-data {
-	border-right: solid 5px #f6f6f6;
-	float: left;
-	margin: 0 2em 1em 0;
-	padding: 1em 2em;
-	text-align: right;
+span.meta {
+	padding: 0 1em 0 0.5em;
 }
 
 /* Footer */
