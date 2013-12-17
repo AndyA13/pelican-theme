@@ -7,39 +7,28 @@
         {# First item #}
         {% if loop.first and not articles_page.has_previous() %}
 
-          <article>
+              <article>
 
-              <div class="row">
+                  <div class="row">
 
-                  <div class="col-s-12">
-                        <h1><a href="{{ SITEURL }}/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
-                    </div>
-
-                </div>
-                
-                <div class="row">
-
-                    <div class="col-s-12 post">
-
-                      {% include 'article_infos.html' %}
-
-                      {{ article.content }}
+                      <div class="col-s-12">
+                            <h1><a href="{{ SITEURL }}/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+                            {% include 'article_infos.html' %}
+                        </div>
 
                     </div>
+                    
+                    <div class="row">
 
-                </div>
+                        <div class="col-s-12 post">
 
-                <div class="row">
+                          {{ article.content }}
 
-                    <div class="col-s-12">
-
-                        {% include 'comments.html' %}
+                        </div>
 
                     </div>
 
-                </div>
-
-            </article>
+                </article>
 
             {% if loop.length == 1 %}
                 {% include 'pagination.html' %}
@@ -47,26 +36,31 @@
 
             {% if loop.length > 1 %}
 
-                    <div class="row">
+                <hr />
 
-                        <div class="col-s-12">
+                <div class="row">
 
-                            <h2>Older Articles</h2>
+                    <div class="col-s-12">
 
-                        </div>
+                        <h2>Older Articles</h2>
 
                     </div>
+
+                </div>
 
             {% endif %}
         {# other items #}
         {% else %}
-            
+
     <article class="archive">
 
         <div class="row">
 
             <div class="col-s-12">
                 <h2><a href="{{ SITEURL }}/{{ article.url }}" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+                
+                {% include 'article_infos.html' %}
+                
             </div>
 
         </div>
@@ -74,8 +68,6 @@
 
             
             <div class="col-s-12 archive">
-
-                {% include 'article_infos.html' %}
 
                 {{ article.summary }}
 

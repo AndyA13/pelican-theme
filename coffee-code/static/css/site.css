@@ -40,7 +40,12 @@ nav ul, nav ul li {
 	display: inline;
 }
 
-a, a:active, a:visited, a:hover {
+a, a:active, a:visited  {
+	color: #900;
+	text-decoration: none;
+}
+
+a:hover {
 	color: #900;
 	text-decoration: underline;
 }
@@ -90,7 +95,6 @@ ul.blogroll li {
 	float: left;
 	width: 12em;
 	margin-right: 2em;
-	
 }
 
 .footer-meta {
