@@ -9,10 +9,10 @@
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
 
     <!--<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />-->
-    <link href="{{ THEME_STATIC_DIR }}/css/responsive.min.css" rel="stylesheet" />
-    <link href="{{ THEME_STATIC_DIR }}/css/site.css" rel="stylesheet" />
-    <link href="{{ THEME_STATIC_DIR }}/css/pygment.css" rel="stylesheet" />
-    <link href="{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/{{ THEME_STATIC_DIR }}/css/responsive.min.css" rel="stylesheet" />
+    <link href="/{{ THEME_STATIC_DIR }}/css/site.css" rel="stylesheet" />
+    <link href="/{{ THEME_STATIC_DIR }}/css/pygment.css" rel="stylesheet" />
+    <link href="/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" rel="stylesheet" />
 
     {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
@@ -22,8 +22,8 @@
     {% endif %}
     
     <!--[if lt IE 9 &!(IEMobile)]>
-        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/scripts/vendor/html5shiv.min.js"></script>
-        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/scripts/vendor/respond.min.js"></script>
+        <script src="/{{ THEME_STATIC_DIR }}/scripts/vendor/html5shiv.min.js"></script>
+        <script src="/{{ THEME_STATIC_DIR }}/scripts/vendor/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -129,13 +129,13 @@
 
     <!-- Scripts at the bottom for improved performance. -->
     <!--[if IE 8]>     
-    <script src="{{ THEME_STATIC_DIR }}/scripts/vendor/jquery-1.10.2.min.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/scripts/vendor/jquery-1.10.2.min.js"></script>
     <![endif]-->
     <!--[if gt IE 8]><!-->
-    <script src="{{ THEME_STATIC_DIR }}/scripts/vendor/jquery-2.0.3.min.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/scripts/vendor/jquery-2.0.3.min.js"></script>
     <!--<![endif]-->
 
-    <script src="{{ THEME_STATIC_DIR }}/scripts/responsive.min.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/scripts/responsive.min.js"></script>
 
 {% include 'analytics.html' %}
 {% include 'piwik.html' %}
