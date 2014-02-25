@@ -2,7 +2,7 @@ body {
 	color: #222;
     font-size: 18px;
     font-family: arial;
-    line-height: 2em;
+    line-height: 1.8em;
 }
 
 header {
@@ -42,10 +42,6 @@ a:hover {
 h1 a, h1 a:active, h1 a:visited, h1 a:hover,
 h2 a, h2 a:active, h2 a:visited, h2 a:hover {
 	color: #222;
-}
-
-p {
-	margin: 0.5em 0;
 }
 
 /* Posts and archive */
@@ -125,6 +121,11 @@ p.paginator {
 	text-align: center;
 }
 
+p img {
+	display: block;
+	margin: auto;
+}
+
 /* Text helper */
 
 .text-right {
@@ -134,3 +135,16 @@ p.paginator {
 .text-center {
 	text-align: center;
 }
+
+figcaption {
+	background-color: #eee;
+	font-size: 0.9em;
+	padding: 0.5em;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0.2em 1em;
+	background-color: #eee;
+}
+
